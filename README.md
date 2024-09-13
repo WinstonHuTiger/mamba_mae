@@ -17,7 +17,7 @@ Learning meaningful and interpretable representations from high-dimensional volu
 
 ## Results under different patch sizes
 
-5-fold cross-validation results for IDH status classification and 1p/19q co-deletion classification using linear scaled model across different patch sizes (4, 16, 32):
+5-fold cross-validation results for IDH mutation status classification and 1p/19q co-deletion classification using linear scaled model across different patch sizes $$p \in  \{4，16，32 \}$$:
 | Patch size | Sequence length | Accuracy (IDH) | F1-score (IDH) | AUC (IDH) | Accuracy (1p/19q) | F1-score (1p/19q) | AUC (1p/19q) |
 |------------|-----------------|----------------|----------------|-----------|-------------------|-------------------|--------------|
 | 32         | 125             | 0.978                      | 0.967                | 0.997          | 0.896                      | 0.797                | 0.947          |
