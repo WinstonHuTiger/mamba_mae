@@ -20,9 +20,9 @@ Learning meaningful and interpretable representations from high-dimensional volu
 5-fold cross-validation results for IDH status classification and 1p/19q co-deletion classification using linear scaled model across different patch sizes (4, 16, 32):
 | Patch size | Sequence length | Accuracy (IDH) | F1-score (IDH) | AUC (IDH) | Accuracy (1p/19q) | F1-score (1p/19q) | AUC (1p/19q) |
 |------------|-----------------|----------------|----------------|-----------|-------------------|-------------------|--------------|
- | 4          | 64000           | **0.998**                  | **0.997**            | **0.999**      | **0.911**                  | **0.832**            | **0.958**      |
-   | 16         | 1000            | 0.988                      | 0.980                | 0.997          | 0.911                      | 0.827                | 0.944          |
- | 32         | 125             | 0.978                      | 0.967                | 0.997          | 0.896                      | 0.797                | 0.947          |
+| 32         | 125             | 0.978                      | 0.967                | 0.997          | 0.896                      | 0.797                | 0.947          |
+| 16         | 1000            | 0.988                      | 0.980                | 0.997          | 0.911                      | 0.827                | 0.944          |
+| 4          | 64000           | **0.998**                  | **0.997**            | **0.999**      | **0.911**                  | **0.832**            | **0.958**      |
 
 
 ## Installing the dependencies
@@ -93,7 +93,15 @@ python visualize_finetuned.py
 ```
 
 ## Citation
-Coming soon!!!
+```
+@misc{hu2024learningbraintumorrepresentation,
+      title={Learning Brain Tumor Representation in 3D High-Resolution MR Images via Interpretable State Space Models}, 
+      author={Qingqiao Hu and Daoan Zhang and Jiebo Luo and Zhenyu Gong and Benedikt Wiestler and Jianguo Zhang and Hongwei Bran Li},
+      year={2024},
+      eprint={2409.07746},
+      archivePrefix={arXiv}
+}
+```
 
 ## Acknowledgement
 
