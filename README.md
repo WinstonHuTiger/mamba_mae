@@ -41,7 +41,8 @@ Learning meaningful and interpretable representations from high-dimensional volu
 
 
 ## Dataset Description
-- In this work, we use Brats2022 dataset for pre-training and EGD dataset for fine-tuning. 
+- In this work, we use Brats2022 (Brats2021) dataset for pre-training and EGD dataset for fine-tuning.
+- A [label description file](assets/Genetic_and_Histological_labels.xlsx) is provided for reference.
 - After you have downloaded the data, please remember to process them into ```160 x 160 x 160``` volumes and make sure the data value is integer and the range is [0, 255]. 
 - Create a file named ```config.ini```, with the following content: 
   ```
