@@ -225,11 +225,12 @@ def main(args):
     for fold, (train_ids, test_ids) in enumerate(kfold.split(whole_dataset, y)):
         print(f"Start finetuning for fold_{fold}")
         dataset_train = torch.utils.data.Subset(whole_dataset, train_ids)
-        dataset_train.transform = transforms_
+        # data argumentation is not applied here due to the subset's packaging 
+        # dataset_train.transform = transforms_
         dataset_val = torch.utils.data.Subset(whole_dataset, test_ids)
         
-        
-        dataset_train.transform = train_transforms
+        # data argumentation is not applied here due to the subset's packaging 
+        # dataset_train.transform = train_transforms
         if distribute_flag:
             sampler_train = torch.utils.data.DistributedSampler(
             dataset_train, num_replicas=num_tasks, rank=global_rank, shuffle=True
